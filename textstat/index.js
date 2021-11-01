@@ -10,31 +10,32 @@
 function onStatisticsClicked(event) {
     //TODO: Implement this function
 
+
+    // задаю текст
     String1 = txt
-    //characters
+    //создаю переменную, считывающую длину текста
     Characters = String1.length
 
-    //Spaces
+    //создаю переменную, считающую пробелы
     Spaces = String1.find(" ",-1,Characters)
 
-    //vowels count
-    Vowels = String1
-    for i in String1:
-        if i.lower() == 'a' or i.lower //and so on
-        Vowels = Vowels.replace(i, "")
-        print(Vowels)
-
-    //consonants
-    conso = String1.length - Vowels
-
+    //   vowels/consonants  count
+    Vowels = 0
+    Consonants = 0
+    for i in txt:
+        letter = i.lower()
+    if letter == "a" or letter == "e" or\
+    letter == "i" or letter == "o" or\
+    letter == "u" or letter == "y":
+    Vowels += 1
+    else:
+    Consonants += 1
+    
     //words
-    words=len(set(txt.read().split()))
+    Words=len(set(txt.read().split()))
 
     
 
-
-
-    console.log('onStatisticsClicked called');
 }
 
 /**
@@ -47,11 +48,11 @@ function onRemoveWordsClicked(event) {
 
     //remove
 
-    print(* (String1[1::2]+String1[::2]))
+    Odd_words = (* (String1[1::2]+String1[::2]))
 
 
 
-    console.log('onRemoveWordsClicked called');
+    
 }
 
 
