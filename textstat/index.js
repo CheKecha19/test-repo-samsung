@@ -9,6 +9,31 @@
  */
 function onStatisticsClicked(event) {
     //TODO: Implement this function
+
+    String1 = txt
+    //characters
+    Characters = String1.length
+
+    //Spaces
+    Spaces = String1.find(" ",-1,Characters)
+
+    //vowels count
+    Vowels = String1
+    for i in String1:
+        if i.lower() == 'a' or i.lower //and so on
+        Vowels = Vowels.replace(i, "")
+        print(Vowels)
+
+    //consonants
+    conso = String1.length - Vowels
+
+    //words
+    words=len(set(txt.read().split()))
+
+    
+
+
+
     console.log('onStatisticsClicked called');
 }
 
@@ -19,6 +44,13 @@ function onStatisticsClicked(event) {
  */
 function onRemoveWordsClicked(event) {
     //TODO: Implement this function
+
+    //remove
+
+    print(* (String1[1::2]+String1[::2]))
+
+
+
     console.log('onRemoveWordsClicked called');
 }
 
