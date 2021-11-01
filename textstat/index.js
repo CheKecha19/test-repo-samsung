@@ -9,6 +9,9 @@
  */
 function onStatisticsClicked(event) {
     //TODO: Implement this function
+    
+    string1=txt
+    string1.find(" ",-1,length.txt)
     console.log('onStatisticsClicked called');
 }
 
