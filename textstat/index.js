@@ -10,32 +10,30 @@
 function onStatisticsClicked(event) {
     //TODO: Implement this function
 
+    //текст вставил свой для теста
 
-    // задаю текст
-    String1 = txt
-    //создаю переменную, считывающую длину текста
-    Characters = String1.length
-
-    //создаю переменную, считающую пробелы
-    Spaces = String1.find(" ",-1,Characters)
-
-    //   vowels/consonants  count
+    String1 = "try test me, teamlead! try find all"
+     
+     
+    Characters = len(String1)
+    
+    Spaces = String1.count(' ')
+    
     Vowels = 0
     Consonants = 0
-    for i in txt:
+    for i in String1:
         letter = i.lower()
-    if letter == "a" or letter == "e" or\
-    letter == "i" or letter == "o" or\
-    letter == "u" or letter == "y":
-    Vowels += 1
-    else:
-    Consonants += 1
+        if letter == "a" or\
+            letter == "e" or\
+            letter == "i" or\
+            letter == "o" or\
+            letter == "u" or\
+            letter == "y":
+                Vowels += 1
+        else:
+            Consonants += 1
     
-    //words
-    Words=len(set(txt.read().split()))
-
-    
-
+    Words = len(set(String1.split()))
 }
 
 /**
@@ -44,15 +42,11 @@ function onStatisticsClicked(event) {
  * @param {object} event - Event class
  */
 function onRemoveWordsClicked(event) {
-    //TODO: Implement this function
+    //TODO: Implement this function  
 
-    //remove
-
-    Odd_words = (* (String1[1::2]+String1[::2]))
-
-
-
-    
+    Odd_words = String1.split()
+    Odd_words_removed = list(Odd_words)
+    del Odd_words_removed[::2]    
 }
 
 
